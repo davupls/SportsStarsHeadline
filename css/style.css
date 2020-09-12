@@ -1,17 +1,65 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     --brand-font: 'Merriweather', serif;
     --page-font: 'Open Sans', sans-serif;
     font-family: var(--page-font);
     background-color: #FBFBF8;
 }
 
-.head{
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown {
+    transition: all 0.2s ease-in-out;
+    overflow: hidden;
+    margin: 30px;
+    background: rgb(248, 248, 248);
+    border: solid 1px rgb(222, 222, 222);
+    width: 320px;
+    cursor: pointer;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu {
+    height: 230px;
+}
+
+.menu li {
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 14px 6px;
+    border-top: solid 1px rgb(202, 202, 202)
+}
+
+.dropdown.closed .menu {
+    height: 33px;
+}
+
+.dropdown.closed>.icon span {
+    transform: rotate(180deg);
+}
+
+
+
+.head {
     border-bottom: 2px solid red;
     font-family: var(--brand-font);
     font-weight: 400;
@@ -22,14 +70,14 @@ body{
     width: 80vw;
 }
 
-.title__head{
+.title__head {
     font-size: 27px;
     margin: 30px 5px 40px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.title__sub{
+.title__sub {
     color: rgb(123, 123, 123);
     font-size: 14px;
     margin: 0 auto 30px;
@@ -37,52 +85,52 @@ body{
     width: 85vw;
 }
 
-.title__img{
+.title__img {
     display: flex;
     justify-content: center;
 }
 
-.title__img > img{
-        /* width: 100vw; */
-        object-fit: cover;
-        height: 400px;
-        margin: 0 ;
-        width: 90vw;
+.title__img>img {
+    /* width: 100vw; */
+    object-fit: cover;
+    height: 400px;
+    margin: 0;
+    width: 90vw;
 }
 
-.title__name{
+.title__name {
     margin: 10px 22px 0;
     text-transform: uppercase;
 }
 
-.title__dob{
+.title__dob {
     margin: 5px 22px;
 }
 
-.title__content__wrap{
+.title__content__wrap {
     display: flex;
     justify-content: center;
 }
 
-.title__content{
+.title__content {
     font-size: 18px;
     margin-top: 15px;
     line-height: 1.6;
     width: 90vw;
 }
 
-footer{
+footer {
     background-color: black;
     margin-top: 60px;
 }
 
-footer > p{
+footer>p {
     color: #FBFBF8;
     font-size: 13px;
     padding: 15px;
     text-align: center;
 }
 
-a{
+footer a {
     color: #FBFBF8;
 }
